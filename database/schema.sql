@@ -1,0 +1,1 @@
+-- Schema will be defined here once the DB is chosen
