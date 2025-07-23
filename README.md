@@ -1,4 +1,4 @@
-Church website
+Church web application
 
 A full stack website built for GPCC to share sermons, announcements, events, 
 donate, pay tithes and offerings and share contact information
