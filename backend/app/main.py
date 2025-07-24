@@ -1,11 +1,10 @@
 from fastapi import FastAPI
-from app.routes import hello_route
+from app.routes import announcement_route, auth_route
 
 
 app = FastAPI()
-app.include_router(hello_route.router)
 
 
-@app.get("/")
-def home():
-    return {"message": "Welcome to GPCC backend"}
+# routes
+app.include_router(announcement_route.router)
+app.include_router(auth_route.router)
