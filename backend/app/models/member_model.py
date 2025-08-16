@@ -17,7 +17,7 @@ class Member(Document):
     join_date: datetime = Field(default_factory=datetime.utcnow)
     is_active: bool = True
     departments: List[str] = []
-    password_hash: str  # Store hashed passwords
+    password_hash: str  
 
     @validator("role")
     def validate_role(cls, v):

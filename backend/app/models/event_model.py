@@ -16,7 +16,11 @@ class Event(Document):
     registration_required: bool = False
     max_attendees: Optional[int] = None
     volunteers_needed: bool = False
-    volunteer_roles: List[str] = [] # e.g ['choir', ''usher]
+    volunteer_roles: List[str] = [], # e.g ['choir', ''usher]
+    
+    google_form_url: Optional[str] = None,
+     
+
 
     class Setting:
         name = "events"
@@ -24,6 +28,7 @@ class Event(Document):
 class EventRegistration(Document):
     event_id: str
     member_id: str
+    member_name: str
     role: str
     registration_time: datetime = Field(default_factory=datetime.utcnow)
     status: str = "pending" # registered, attended, cancelled
@@ -35,6 +40,7 @@ class EventRegistration(Document):
 class VolunteerSignup(Document):
     event_id: str
     member_id: str
+    member_name: str = Field(default="unknown")
     role: str
     signup_time: datetime = Field(default_factory=datetime.utcnow)
     status: str = "pending"  # pending, confirmed, declined
