@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends
 from app.dependencies import require_admin
-from . import members, events, users, roles
+from . import members, events, users, roles, attendance_settings, prayer_testimony_admin
 
 
 admin_router = APIRouter(
@@ -11,3 +11,6 @@ admin_router.include_router(members.router, prefix="/members", tags=["Admin - Me
 admin_router.include_router(events.router, prefix="/events", tags=["Admin - Events"])
 admin_router.include_router(users.router, prefix="/users", tags=["Admin - Users"])
 admin_router.include_router(roles.router, prefix="/roles", tags=["Admin - Roles"])
+admin_router.include_router(prayer_testimony_admin.router, prefix="/admin-prayer&testimony", tags=["Admin - Prayer & Testimony"])
+admin_router.include_router(attendance_settings.router, prefix="/admin", tags=["Admin - Attendance Settings"])
+

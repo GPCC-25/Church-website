@@ -1,9 +1,11 @@
 from pydantic import BaseModel, EmailStr
+from app.schemas.member_schema import MemberOut
 
 
 class TokenResponse(BaseModel):
     access_token: str
-    token_type: str
+    token_type: str = "bearer"
+    user: MemberOut
 
 
 class UserLogin(BaseModel):

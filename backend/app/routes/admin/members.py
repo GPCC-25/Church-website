@@ -8,7 +8,22 @@ router = APIRouter()
 
 @router.get("/", response_model=list[MemberOut])
 async def get_all_members():
-    return await Member.find_all().to_list()
+    members = await Member.find_all().to_list()
+
+    return [
+        MemberOut(
+            id=str(member.id),
+            first_name=member.first_name,
+            last_name=member.last_name,
+            email=member.email,
+            phone=member.phone,
+            role=member.role,
+            join_date=member.join_date,
+            is_active=member.is_active,
+            departments=member.departments or []
+        )
+        for member in members
+    ]
 
 
 @router.post("/", response_model=MemberOut)
