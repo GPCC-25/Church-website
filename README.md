@@ -1,3 +1,4 @@
+
 # Church App Backend
 
 A FastAPI backend for a church management system.
@@ -14,3 +15,4 @@ A FastAPI backend for a church management system.
 1. Install dependencies:
    ```bash
    pip install -r requirements.txt
+
