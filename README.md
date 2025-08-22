@@ -1,19 +1,18 @@
-Church web application
 
-A full stack web application built for GPCC to share sermons, announcements, events, 
-donate, pay tithes and offerings and share contact information
+# Church App Backend
 
-Tech Stack
--Frontend: React/TailwindCSS
--Backend: FastAPI (Python)
--Database: MongoDB
+A FastAPI backend for a church management system.
 
-Project Structure
+## Features
 
+- Member management
+- Event management
+- Announcement system
+- Authentication and authorization
 
-church-website/
-├── frontend/    # React/TailwindCSS
-├── backend/     # FastAPI app
-├── database/    # MongoDB
-├── docs/        # Planning and documentation
-└── tests/       # Test suites
+## Setup
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+
