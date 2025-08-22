@@ -18581,3 +18581,14 @@ TypeError: app.schemas.announcement_schema.AnnouncementResponse() got multiple v
 2025-08-22 13:37:41,957 - app.utils.cache - INFO - Closed in-memory cache
 2025-08-22 13:37:41,958 - main - INFO - Cache closed successfully
 2025-08-22 13:37:43,609 - main - INFO - Environment variables loaded
+2025-08-22 14:38:55,345 - main - INFO - Environment variables loaded
+2025-08-22 20:40:20,572 - main - INFO - Environment variables loaded
+2025-08-22 20:47:33,180 - main - INFO - Environment variables loaded
+2025-08-22 21:18:00,544 - main - INFO - Environment variables loaded
+2025-08-22 21:23:56,552 - main - INFO - Environment variables loaded
+2025-08-22 21:32:26,284 - main - INFO - Environment variables loaded
+2025-08-22 21:38:40,984 - main - INFO - Environment variables loaded
+2025-08-22 21:56:54,901 - main - INFO - Environment variables loaded
+2025-08-22 22:24:30,720 - main - INFO - Environment variables loaded
+2025-08-22 22:27:20,922 - main - INFO - Environment variables loaded
+2025-08-22 22:30:41,706 - main - INFO - Environment variables loaded

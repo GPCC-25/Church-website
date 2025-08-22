@@ -19,8 +19,8 @@ class Member(Document):
     departments: List[str] = []
     password_hash: str  
 
-    notification_preference: str = Field("both", description="Preferred notification: email, sms, or both")
-    sms_opt_in: bool = Field(False, description="Explicit consent for SMS notifications")
+    #notification_preference: str = Field("both", description="Preferred notification: email, sms, or both")
+    #sms_opt_in: bool = Field(False, description="Explicit consent for SMS notifications")
 
 
     @validator("role")

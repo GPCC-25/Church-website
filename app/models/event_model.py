@@ -18,7 +18,6 @@ class Event(Document):
     volunteers_needed: bool = False
     volunteer_roles: List[str] = [], # e.g ['choir', ''usher]
     
-    google_form_url: Optional[str] = None,
      
 
 
