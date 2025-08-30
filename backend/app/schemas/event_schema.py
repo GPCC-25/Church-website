@@ -32,7 +32,7 @@ class EventUpdate(BaseModel):
     max_attendees: Optional[int] = None
     volunteers_needed: Optional[bool] = None
     volunteer_roles: Optional[List[str]] = None
-
+    
 
 class EventOut(EventBase):
     id: str

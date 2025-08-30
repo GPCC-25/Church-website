@@ -16,9 +16,8 @@ class Event(Document):
     registration_required: bool = False
     max_attendees: Optional[int] = None
     volunteers_needed: bool = False
-    volunteer_roles: List[str] = [], # e.g ['choir', ''usher]
+    volunteer_roles: List[str] = [] # e.g ['choir', ''usher]
     
-    google_form_url: Optional[str] = None,
      
 
 
