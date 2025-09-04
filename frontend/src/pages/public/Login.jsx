@@ -17,7 +17,7 @@ export default function Login() {
   const [error, setError] = useState('');
 
   // TODO: Replace with your church's API base URL
-  const API_BASE = 'http://localhost:8000'; // Update this to your backend URL
+  const API_BASE = 'http://127.0.0.1:8000'; // Update this to your backend URL
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
