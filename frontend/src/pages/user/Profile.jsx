@@ -30,7 +30,7 @@ export default function Profile() {
   const [message, setMessage] = useState('');
 
   // TODO: Replace with your church's API base URL
-  const API_BASE = 'http://localhost:8000'; // Update this to your backend URL
+  const API_BASE = import.meta.env.VITE_PUBLIC_API_URL; // Update this to your backend URL
 
   // TODO: Update these with your church's departments
   const availableDepartments = [
