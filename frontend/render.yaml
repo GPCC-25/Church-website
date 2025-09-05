@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: church-website-frontend
+    env: static
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: VITE_PUBLIC_API_URL
+        value: https://church-website-t5g0.onrender.com

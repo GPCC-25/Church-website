@@ -16,8 +16,8 @@ export default function Login() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  // TODO: Replace with your church's API base URL
-  const API_BASE = import.meta.env.VITE_PUBLIC_API_URL; // Update this to your backend URL
+  // Using environment variable for API base URL
+  const API_BASE = import.meta.env.VITE_PUBLIC_API_URL;
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;

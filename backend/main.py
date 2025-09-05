@@ -34,8 +34,9 @@ app = FastAPI(
 )
 
 origins = [
-    "http://localhost:3000",
-     # Your frontend on Render here
+    "http://localhost:3000",  # Local development
+    "http://localhost:5173",  # Vite dev server
+    "http://localhost:4173",  # Vite preview server
 ]
 
 app.add_middleware(
