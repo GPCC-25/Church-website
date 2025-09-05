@@ -9,8 +9,8 @@ export default function Events() {
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [selectedRole, setSelectedRole] = useState('');
 
-  // TODO: Replace with your church's API base URL
-  const API_BASE = import.meta.env.VITE_PUBLIC_API_URL; // Update this to your backend URL
+  // Using environment variable for API base URL
+  const API_BASE = import.meta.env.VITE_PUBLIC_API_URL;
 
   useEffect(() => {
     fetchEvents();
